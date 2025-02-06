@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    color:#a5ad68;
+}
+
+li:hover{
+    font-size: large;
+}
+
+
+
+#div1{
+    background-image: url( https://wallpapers.com/images/hd/question-mark-background-7hlccb3b42p15amt.jpg);
+}
+
+#housingDiv {
+  display: flex;
+ 
+  background-color: lightblue; /* Initial background color */
+  animation: changeBackgroundColor 5s infinite; /* Animation name, duration, and iteration */
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+    background-color: lightblue;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: orange;
+  }
+  75% {
+    background-color: red;
+  }
+  100% {
+    background-color: lightblue; /* Back to the initial color */
+  }
+}
+
+#gkDiv{
+padding: 10px;
+
+}
+
+#demo{
+    animation: ChangeSizeAndColor 3s infinite;
+}
+
+@keyframes  ChangeSizeAndColor{
+  15% {
+    font-size:16px ;
+    color:green ;
+  }
+  25% {
+    font-size:20px ;
+    color:blue ;
+  }
+  30%{
+     font-size:22px ;
+    color:blue ;
+  }
+  50% {
+    font-size:25px ;
+    color:blue ;
+  }
+  60% [
+     font-size:22px ;
+    color:green ;
+  ]
+  75% {
+    font-size:20px ;
+    color:green ;
+  }
+  100% {
+    font-size:15px ;
+    color:green ;
+  }
+}
+body{
+  text-align: center;
+}
+        </style>
+    </head>
+    <body>
+        <div id="div1">
+            <nav>
+                <ul>
+                    <li href="#">home</li>
+                    <li href="#">General Knowledge</li>
+                    <li href="#">Mathematics</li>
+                    <li href="#">Science</li>
+                    <li href="#">Question bank</li>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </ul>
+            </nav>
+            <p id="demo"></p>
+        </div>
+        <div id="housingDiv">
+             <div id="gkDiv">
+                <img src="https://thumbs.dreamstime.com/b/general-knowledge-thought-out-idea-light-bulb-brain-vector-illustration-flat-gradien-general-knowledge-thought-out-idea-light-119243021.jpg" height:"200px" width="200px">
+                <p>
+             This quiz maked you readier for real world problem solving, and knowing better, GK questions test the candidates analytic skills and problem solving ablites. it helps to develop reasoning and logical skills
+             </p>
+             <br>
+             <button>Start GK quiz</button>
+             </div>
+             <div id="ScienceDiv">
+               <p>
+                <img src="https://www.creativefabrica.com/wp-content/uploads/2020/02/10/Science-Logo-Graphics-1-14.jpg" height="200" width="250"><br>
+                this quiz makes the student understand the core  science, and a competition to enourage students to look beyond their textual knowledge and establish a relationship  between theory and application of the learnt concepts
+               </p>
+               <button>Start Science Quiz</button>
+             </div>
+             <div id="mathDiv">
+                <img src="https://t3.ftcdn.net/jpg/02/28/93/86/360_F_228938670_6fqDkXHDva9Up2yu7pQG9iecxqeJGZgC.jpg" height="200" width="200">
+              <p>
+                this quiz is an interesting take and questions which re-inforce their mistakes with knowledge for the next time, teaching them core math and ensuring understanding of all topics that we went over in school 
+              </p>
+              <button>Start Math Quiz</button>
+             </div>
+        </div>
+        <script>
+            let name = prompt("please enter your name")
+            document.getElementById("demo").innerHTML ="Welcome to Quiz Center " + name
+        </script>
+    </body>
+</html>
